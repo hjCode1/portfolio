@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="title" content="프론트엔드, hjcode">
+    <meta name="description" content="프론트엔드, UI개발, Javascript, HTML5, CSS3">
+    <meta name="keywords" content="프론트엔드, UI개발, Javascript, HTML5, CSS3">
+    <meta property="og:title" content="프론트엔드, hjcode">
+    <meta property="og:description" content="프론트엔드, UI개발, Javascript, HTML5, CSS3">
+    <title>hjcode</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 id="logo">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="150px" height="93px"
+                viewBox="0 0 150 93" enable-background="new 0 0 150 93" xml:space="preserve">
+                <g>
+                    <path
+                        d="M19.048,0.582c5.079,0.223,7.937,3.775,8.576,10.658c0.083,7.494-3.289,15.861-10.116,25.103
+                  l-4.705,6.37c3.274-0.75,5.551-0.305,6.828,1.332c1.166,1.666,1.096,4.746-0.208,9.242c-1.111,4.08-1.264,6.314-0.458,6.702
+                  c0.749,0.444,2.144-0.249,4.184-2.081c2.04-1.832,4.669-4.454,7.889-7.868c1.832-0.527,2.748-0.069,2.748,1.374
+                  c0,0.36-0.056,0.777-0.167,1.249c-3.331,3.58-6.147,6.321-8.451,8.222c-2.304,1.901-4.44,2.949-6.411,3.144
+                  c-1.526-0.084-2.65-0.777-3.372-2.082c-0.916-1.748-0.458-6.078,1.374-12.988c0.555-2.275-0.541-3.248-3.289-2.915
+                  c-1.471,0.167-3.608,1.805-6.411,4.913L4.728,62.32c-0.25,1.11-1.249,1.665-2.998,1.665c-0.693-0.056-1.041-0.583-1.041-1.582
+                  c0-0.389,0.042-0.818,0.125-1.291l1.249-6.327c-1.109-0.333-1.665-0.916-1.665-1.749c0-0.499,0.181-1.067,0.541-1.707l2.373-2.539
+                  l7.369-33.804c1.721-7.577,3.136-11.857,4.246-12.843C16.037,1.158,17.411,0.638,19.048,0.582z M19.756,4.787
+                  c-1.388-0.25-2.457,0.999-3.206,3.747l-7.91,33.013c1.832-2.415,3.997-5.46,6.495-9.138c2.498-3.677,4.434-7.063,5.808-10.158
+                  c1.374-3.094,2.233-5.787,2.581-8.076c0.347-2.29,0.25-4.33-0.292-6.12C22.691,6.264,21.532,5.175,19.756,4.787z" />
+                    <path d="M45.359,49.789c1.832-0.472,2.748,0.098,2.748,1.707c0,0.277-0.028,0.583-0.083,0.916
+                  c-3.803,3.691-8.077,7.3-12.822,10.824l-4.83,19.441c-0.971,3.996-2.358,6.854-4.163,8.575c-0.888,0.833-1.887,1.249-2.998,1.249
+                  c-0.417,0-0.86-0.056-1.332-0.166c-1.305-0.39-2.387-1.457-3.248-3.206c-0.776-1.609-1.166-3.595-1.166-5.953
+                  c0.056-2.081,0.465-4.142,1.228-6.182c0.764-2.04,2.297-4.379,4.6-7.015l9.326-9.45l2.748-10.033l-3.539,3.289
+                  c-1.999,0.333-2.762-0.514-2.29-2.54c2.831-2.747,5.287-5.397,7.369-7.951c1.666-1.055,2.858-0.625,3.581,1.291L36.7,57.824
+                  C39.198,55.854,42.083,53.176,45.359,49.789z M25.459,72.853c-3.025,2.803-4.607,6.245-4.746,10.324
+                  c0,3.969,0.833,5.897,2.498,5.787c1.388-0.194,2.664-2.456,3.83-6.786l4.33-15.694L25.459,72.853z M40.072,34.511
+                  c0.055-1.249,0.75-1.915,2.082-1.999c1.526,0.083,2.234,0.777,2.123,2.082c0.027,1.416-0.611,2.151-1.915,2.207
+                  C40.807,36.829,40.044,36.065,40.072,34.511z" />
+                    <path
+                        d="M54.851,40.88c0.86-0.277,1.804-0.417,2.831-0.417c0.833,0,1.734,0.098,2.706,0.292
+                  c1.637,0.666,2.782,1.555,3.435,2.665c0.652,1.11,0.985,2.262,0.999,3.455c0.014,1.193-0.236,2.096-0.749,2.706
+                  c-0.514,0.61-1.333,0.965-2.457,1.062c-1.124,0.098-1.784-0.256-1.978-1.062c-0.194-0.805-0.111-1.471,0.25-1.998
+                  c1.026-0.86,1.283-1.63,0.77-2.311c-0.514-0.68-1.36-1.027-2.54-1.041c-1.18-0.014-2.456,0.333-3.83,1.041
+                  c-1.374,0.707-2.429,1.533-3.164,2.477c-0.736,0.944-1.374,1.957-1.915,3.039c-0.542,1.083-0.923,2.138-1.145,3.164
+                  c-0.222,1.027-0.194,2.055,0.083,3.081c0.277,1.026,1.054,1.956,2.331,2.789c1.832,0.583,3.49,0.764,4.975,0.541
+                  c1.484-0.222,2.907-0.776,4.267-1.665c3.358-2.415,6.578-5.189,9.658-8.326c1.692-0.472,2.54,0.056,2.54,1.582
+                  c0,0.333-0.042,0.694-0.125,1.082c-3.275,3.22-6.661,6.093-10.158,8.618c-1.915,1.11-3.345,1.755-4.288,1.936
+                  c-0.944,0.181-2.331,0.354-4.163,0.521c-2.526-0.028-4.469-0.479-5.828-1.354c-1.36-0.874-2.359-2.102-2.998-3.684
+                  c-0.472-1.138-0.708-2.29-0.708-3.456c0-0.638,0.069-1.276,0.208-1.915c0.583-2.414,1.228-4.155,1.936-5.225
+                  c0.708-1.067,1.457-2.074,2.248-3.018c0.791-0.943,1.734-1.804,2.831-2.581C51.971,42.102,53.296,41.436,54.851,40.88z" />
+                    <path d="M77.852,42.608c1.457-0.541,2.963-0.839,4.518-0.895c1.582,0,2.955,0.444,4.121,1.332
+                  c0.943,0.861,1.54,1.707,1.79,2.54s0.389,1.832,0.416,2.998c0.693,1.415,1.43,2.331,2.207,2.747
+                  c0.776,0.417,1.79,0.265,3.039-0.458c1.525-0.276,2.289,0.125,2.289,1.208c0,0.444-0.139,1.014-0.416,1.707
+                  c-2.138,1.804-4.094,2.497-5.87,2.081c-1.193-0.389-2.138-0.93-2.831-1.623c-0.61,1.581-1.373,3.012-2.289,4.287
+                  c-0.916,1.277-2.145,2.478-3.685,3.602s-3.157,1.714-4.85,1.77c-1.999-0.084-3.553-0.514-4.663-1.291
+                  c-1.249-0.832-2.192-2.262-2.831-4.288c-0.194-0.721-0.292-1.471-0.292-2.248c0-1.415,0.319-2.928,0.958-4.537
+                  c0.61-1.555,1.283-2.866,2.019-3.935c0.735-1.068,1.616-2.033,2.644-2.893C75.152,43.85,76.395,43.149,77.852,42.608z
+                   M76.457,47.291c-1.443,1.083-2.623,2.942-3.539,5.579c-0.972,3.441-0.486,5.718,1.457,6.827c1.637,0.889,3.594,0.223,5.87-1.998
+                  c1.915-1.998,3.414-4.385,4.496-7.161c-0.61-1.026-1.068-1.936-1.373-2.727c-0.306-0.791-0.583-1.658-0.833-2.602
+                  C80.259,45.183,78.233,45.876,76.457,47.291z" />
+                    <path d="M100.062,43.399c1.305-0.708,2.505-1.103,3.602-1.187c1.096-0.083,2.032-0.027,2.81,0.167
+                  c0.777,0.194,1.942,0.556,3.497,1.083l5.787-21.398c0.166-0.583,0.61-0.874,1.332-0.874c0.222,0,0.472,0.028,0.749,0.083
+                  c1.138,0.306,1.609,0.889,1.416,1.749l-8.326,31.099l-0.666,3.954c-0.057,1.722,0.707,2.055,2.289,1
+                  c3.636-2.665,7.091-5.689,10.366-9.076c1.804-0.499,2.706-0.027,2.706,1.416c0,0.36-0.056,0.735-0.167,1.124
+                  c-3.358,3.607-6.384,6.411-9.075,8.409c-2.692,1.998-4.773,2.997-6.244,2.997c-0.777,0-1.499-0.222-2.165-0.666
+                  c-0.972-0.638-1.499-1.637-1.582-2.997c-1.388,1.36-2.637,2.331-3.747,2.914c-0.999,0.499-2.442,0.749-4.329,0.749
+                  c-2.388-0.193-4.052-1.457-4.996-3.788c-0.416-1.305-0.624-2.608-0.624-3.913c0-1.582,0.306-3.164,0.916-4.746
+                  c0.942-2.387,1.929-4.156,2.955-5.308C97.591,45.037,98.757,44.106,100.062,43.399z M105.328,45.688
+                  c-1.124-0.042-2.45,0.361-3.976,1.207c-1.527,0.848-2.929,2.936-4.205,6.266c-1.055,3.247-0.61,5.427,1.332,6.536
+                  c1.915,0.361,3.691-0.104,5.329-1.395c1.638-1.291,2.899-3.379,3.788-6.266l1.457-5.204
+                  C107.694,46.112,106.452,45.73,105.328,45.688z" />
+                    <path d="M130.203,42.524c1.442-0.541,2.982-0.825,4.62-0.853c1.555,0,2.941,0.431,4.163,1.291
+                  c0.86,0.666,1.276,1.499,1.249,2.498c-0.027,1-0.347,1.985-0.957,2.956c-1.582,2.082-3.338,3.497-5.267,4.247
+                  c-1.929,0.749-3.615,1.18-5.058,1.29c-1.443,0.111-2.817-0.027-4.122-0.416c-0.25,1.305-0.229,2.512,0.063,3.622
+                  c0.292,1.11,1.048,1.929,2.27,2.456c1.525,0.556,3.053,0.77,4.579,0.646c1.525-0.125,3.372-0.715,5.537-1.77
+                  c3.58-2.442,6.91-5.343,9.991-8.701c1.554-0.416,2.331,0.083,2.331,1.499c0,0.333-0.042,0.722-0.125,1.165
+                  c-3.303,3.387-6.702,6.397-10.199,9.034c-2.359,1.61-5.329,2.47-8.909,2.581c-2.831-0.027-4.85-0.472-6.058-1.332
+                  c-1.207-0.86-2.039-1.728-2.497-2.602c-0.458-0.875-0.742-2.241-0.854-4.101c0-2.498,0.541-4.802,1.623-6.911
+                  c0.972-1.721,2.123-3.115,3.456-4.184C127.372,43.871,128.759,43.066,130.203,42.524z M130.619,45.959
+                  c-1.998,0.806-3.608,2.346-4.829,4.621c3.58,0.5,6.349,0.015,8.305-1.457c1.957-1.471,2.686-2.637,2.186-3.497
+                  C135.476,44.572,133.589,44.683,130.619,45.959z" />
+                </g>
+
+            </svg>
+        </h1>
+        <a id="menu_ico">
+            <span class="top"></span>
+            <span class="mid"></span>
+            <span class="bot"></span>
+        </a>
+        <div id="side_nav_bg"></div>
+        <div id="side_nav" class="clear">
+            <div class="left">
+            </div>
+            <div class="right">
+                <nav id="nav">
+                    <div>
+                        <ul class="menu">
+                            <li><a href="">HOME</a></li>
+                            <li><a href="mailto:gogokye@naver.com">CONTACT</a></li>
+                        </ul>
+                        <ul class="link">
+                            <li>
+                                <a href="https://hjcode1.github.io/" target="_blank">
+                                    <img src="img/ico_github.png" alt="git blog 바로가기">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://jsfiddle.net/user/hyuckjin/fiddles/" target="_blank">
+                                    <img src="img/ico_jsf.png" alt="jsfiddle 바로가기">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section id="sec1">
+        <div id="main_video">
+            <video autoplay muted playsinline loop poster="video/Travaho.jpg" src="video/Travaho.mp4">
+            </video>
+            <h2 class="video_tit">Web Publisher<br><span>UI Developer</span></h2>
+        </div>
+    </section>
+    <section id="sec2">
+        <div class="code container">
+            <h2 class="title">&lt;about&gt;</h2>
+            <ol>
+                <li data-line="01">
+                    <div class="method">const</div>
+                    <div class="prop">me</div>
+                    <div class="scope">=</div>
+                    {
+                </li>
+                <li data-line="02">
+                    <div class="dots">····</div>
+                    <div class="prop2">name</div>
+                    <div class="scope"> : </div>
+                    <div class="string">'Hyuckjin Kye'</div>
+                    ,
+                </li>
+                <li data-line="03">
+                    <div class="dots">····</div>
+                    <div class="prop2">age</div>
+                    <div class="scope"> : </div>
+                    <div class="number">30</div>
+                    ,
+                </li>
+                <li data-line="04">
+                    <div class="dots">····</div>
+                    <div class="prop2">eMail</div>
+                    <div class="scope"> : </div>
+                    <div class="string">'gogokye@naver.com'</div>
+                    ,
+                </li>
+                <li data-line="05">
+                    <div class="dots">····</div>
+                    <div class="prop2">skills</div>
+                    <div class="scope"> : </div>
+                    [
+                    <div class="string">'HTML5', 'CSS3', 'Javascript', 'JQuery', 'Photoshop'</div>
+                    ]
+                    ,
+                </li>
+                <li data-line="06">
+                    <div class="dots">····</div>
+                    <div class="prop2">learning</div>
+                    <div class="scope"> : </div>
+                    <div class="method">function</div>
+                    (
+                    <div class="prop">skill</div>
+                    ) {
+                </li>
+                <li data-line="07">
+                    <div class="dots">········</div>
+                    <div class="method">this</div>.
+                    <div class="prop2">skills</div>.
+                    <div class="prop2">push</div>
+                    (
+                    <div class="variable">skill</div>
+                    )
+                </li>
+                <li data-line="08">
+                    <div class="dots">····</div>
+                    },
+                </li>
+                <li data-line="09">
+                    <div class="dots">····</div>
+                    <div class="prop2">workExperience</div>
+                    <div class="scope"> : </div>
+                    [
+                </li>
+                <li data-line="10">
+                    <div class="dots">········</div>
+                    {
+                    <div class="string"> '2014 - 2016' </div>
+                    :
+                    <div class="string"> 'Editorial Designer at Primecorp' </div>
+                    },
+                </li>
+                <li data-line="11">
+                    <div class="dots">········</div>
+                    {
+                    <div class="string"> '2017 - NOW' </div>
+                    :
+                    <div class="string"> 'Publisher at Yescall' </div>
+                    }
+                </li>
+                <li data-line="13">
+                    <div class="dots">····</div>
+                    ]
+                </li>
+                <li data-line="14">
+                    }
+                </li>
+                <li data-line="15">
+                    <div class="variable">me</div>.
+                    <div class="prop2">learning</div>
+                    (
+                    <div class="string">'Vue.js'</div>
+                    );
+                </li>
+            </ol>
+            <h2 class="title title_end">&lt;/about&gt;</h2>
+        </div>
+    </section>
+    <section id="sec3">
+        <div class="container">
+            <h2 class="title">&lt;recent-work&gt;</h2>
+            <div class="work_wrap">
+                <ul>
+                    <li class="layer">
+                        <a href="http://central.dubuplus.com/" target="_blank">
+                            <div class="img">
+                                <img src="img/img_work01.jpg" alt="">
+                            </div>
+                            <div class="work_title">
+                                <h3>중부협의회</h3>
+                                <span></span>
+                                <p>HTML5, CSS3, JQuery</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="layer">
+                        <a href="http://central.dubuplus.com/" target="_blank">
+                            <div class="img">
+                                <img src="img/img_work01.jpg" alt="">
+                            </div>
+                            <div class="work_title">
+                                <h3>중부협의회</h3>
+                                <span></span>
+                                <p>HTML5, CSS3, JQuery</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="layer">
+                        <a href="http://central.dubuplus.com/" target="_blank">
+                            <div class="img">
+                                <img src="img/img_work01.jpg" alt="">
+                            </div>
+                            <div class="work_title">
+                                <h3>중부협의회</h3>
+                                <span></span>
+                                <p>HTML5, CSS3, JQuery</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="layer">
+                        <a href="http://central.dubuplus.com/" target="_blank">
+                            <div class="img">
+                                <img src="img/img_work01.jpg" alt="">
+                            </div>
+                            <div class="work_title">
+                                <h3>중부협의회</h3>
+                                <span></span>
+                                <p>HTML5, CSS3, JQuery</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="layer">
+                        <a href="http://central.dubuplus.com/" target="_blank">
+                            <div class="img">
+                                <img src="img/img_work01.jpg" alt="">
+                            </div>
+                            <div class="work_title">
+                                <h3>중부협의회</h3>
+                                <span></span>
+                                <p>HTML5, CSS3, JQuery</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <h2 class="title title_end">&lt;/recent-work&gt;</h2>
+        </div>
+    </section>
+    <footer>
+        <p>Copyright 2019. Hyuckjin All rights reserved.</p>
+        <ul class="">
+            <li>
+                <a href="https://hjcode1.github.io/" target="_blank">
+                    <img src="img/ico_github.png" alt="git blog 바로가기">
+                </a>
+            </li>
+            <li>
+                <a href="https://jsfiddle.net/user/hyuckjin/fiddles/" target="_blank">
+                    <img src="img/ico_jsf.png" alt="jsfiddle 바로가기">
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
