@@ -14,12 +14,14 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/default.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="js/common.js"></script>
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <h1 id="logo">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="150px" height="93px"
@@ -97,6 +99,7 @@
             <span class="mid"></span>
             <span class="bot"></span>
         </a>
+        <!-- 숨김 메뉴 -->
         <div id="side_nav_bg"></div>
         <div id="side_nav" class="clear">
             <div class="left">
@@ -110,12 +113,13 @@
                         </ul>
                         <ul class="link">
                             <li>
-                                <a href="https://hjcode1.github.io/" target="_blank">
-                                    <img src="img/ico_github.png" alt="git blog 바로가기">
+                                <a href="https://hjcode1.github.io/" target="_blank" title="gitblog 바로가기">
+                                    <img src="img/ico_github.png" alt="gitblog 바로가기">
                                 </a>
                             </li>
                             <li>
-                                <a href="https://jsfiddle.net/user/hyuckjin/fiddles/" target="_blank">
+                                <a href="https://jsfiddle.net/user/hyuckjin/fiddles/" target="_blank"
+                                    title="jsfiddle 바로가기">
                                     <img src="img/ico_jsf.png" alt="jsfiddle 바로가기">
                                 </a>
                             </li>
@@ -124,6 +128,7 @@
                 </nav>
             </div>
         </div>
+        <!-- 숨김 메뉴 끝 -->
     </header>
     <section id="sec1">
         <div id="main_video">
@@ -131,6 +136,7 @@
             </video>
             <h2 class="video_tit">Web Publisher<br><span>UI Developer</span></h2>
         </div>
+        <i class="fas fa-angle-double-down arr_down"></i>
     </section>
     <section id="sec2">
         <div class="code container">
@@ -252,48 +258,72 @@
                         </a>
                     </li>
                     <li class="layer">
-                        <a href="http://central.dubuplus.com/" target="_blank">
+                        <a href="http://duruduru.dubuplus.com/" target="_blank">
                             <div class="img">
-                                <img src="img/img_work01.jpg" alt="">
+                                <img src="img/img_work02.jpg" alt="">
                             </div>
                             <div class="work_title">
-                                <h3>중부협의회</h3>
+                                <h3>두루두루</h3>
                                 <span></span>
                                 <p>HTML5, CSS3, JQuery</p>
                             </div>
                         </a>
                     </li>
                     <li class="layer">
-                        <a href="http://central.dubuplus.com/" target="_blank">
+                        <a href="http://template030.dubuplus.com/" target="_blank">
                             <div class="img">
-                                <img src="img/img_work01.jpg" alt="">
+                                <img src="img/img_work04.jpg" alt="">
                             </div>
                             <div class="work_title">
-                                <h3>중부협의회</h3>
+                                <h3>숙박 템플릿</h3>
                                 <span></span>
                                 <p>HTML5, CSS3, JQuery</p>
                             </div>
                         </a>
                     </li>
                     <li class="layer">
-                        <a href="http://central.dubuplus.com/" target="_blank">
+                        <a href="http://nasareteng.com/" target="_blank">
                             <div class="img">
-                                <img src="img/img_work01.jpg" alt="">
+                                <img src="img/img_work05.jpg" alt="">
                             </div>
                             <div class="work_title">
-                                <h3>중부협의회</h3>
+                                <h3>나사렛 국제병원</h3>
                                 <span></span>
                                 <p>HTML5, CSS3, JQuery</p>
                             </div>
                         </a>
                     </li>
                     <li class="layer">
-                        <a href="http://central.dubuplus.com/" target="_blank">
+                        <a href="http://h2s.co.kr/" target="_blank">
                             <div class="img">
-                                <img src="img/img_work01.jpg" alt="">
+                                <img src="img/img_work06.jpg" alt="">
                             </div>
                             <div class="work_title">
-                                <h3>중부협의회</h3>
+                                <h3>에이투에스학원</h3>
+                                <span></span>
+                                <p>HTML5, CSS3, JQuery</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="layer">
+                        <a href="http://template027.dubuplus.com/" target="_blank">
+                            <div class="img">
+                                <img src="img/img_work03.jpg" alt="">
+                            </div>
+                            <div class="work_title">
+                                <h3>협회 템플릿</h3>
+                                <span></span>
+                                <p>HTML5, CSS3, JQuery</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="layer">
+                        <a href="http://techart.co.kr/" target="_blank">
+                            <div class="img">
+                                <img src="img/img_work07.jpg" alt="">
+                            </div>
+                            <div class="work_title">
+                                <h3>데카르트디자인</h3>
                                 <span></span>
                                 <p>HTML5, CSS3, JQuery</p>
                             </div>
@@ -304,21 +334,47 @@
             <h2 class="title title_end">&lt;/recent-work&gt;</h2>
         </div>
     </section>
+    <section id="sec4">
+        <div class="container">
+            <h2 class="title">&lt;lab&gt;</h2>
+            <div class="lab_area">
+                <dl class="lab">
+                    <dt>JSFiddle</dt>
+                    <dd><a href="https://jsfiddle.net/hyuckjin/1yj47rdu/" target="_blank">Scrollspy</a></dd>
+                    <dd><a href="https://jsfiddle.net/hyuckjin/tj85gf3k/" target="_blank">Gallery more</a></dd>
+                    <dd><a href="https://jsfiddle.net/hyuckjin/68rgta47/" target="_blank">Click effect(circle 100%)</a>
+                    </dd>
+                    <dd><a href="https://jsfiddle.net/hyuckjin/7r0j1u8e/" target="_blank">Slide show(no plugin)</a></dd>
+                    <dd><a href="https://jsfiddle.net/hyuckjin/ntm0d6vr/" target="_blank">Slide gallery(no plugin)</a>
+                    </dd>
+                </dl>
+                <dl class="lab">
+                    <dt>GitHub-blog</dt>
+                    <dd><a href="https://hjcode1.github.io/var-const-let/" target="_blank">let,const</a></dd>
+                    <dd><a href="https://hjcode1.github.io/hoisting/" target="_blank">Hoisting</a></dd>
+                    <dd><a href="https://hjcode1.github.io/lotto/" target="_blank">lotto</a></dd>
+                    <dd><a href="https://hjcode1.github.io/forin-forof/" target="_blank">for in, for of</a></dd>
+                </dl>
+            </div>
+            <h2 class="title title_end">&lt;/lab&gt;</h2>
+        </div>
+    </section>
     <footer>
         <p>Copyright 2019. Hyuckjin All rights reserved.</p>
         <ul class="">
             <li>
                 <a href="https://hjcode1.github.io/" target="_blank">
-                    <img src="img/ico_github.png" alt="git blog 바로가기">
+                    <img src="img/ico_github.png" alt="gitblog 바로가기" title="gitblog 바로가기">
                 </a>
             </li>
             <li>
                 <a href="https://jsfiddle.net/user/hyuckjin/fiddles/" target="_blank">
-                    <img src="img/ico_jsf.png" alt="jsfiddle 바로가기">
+                    <img src="img/ico_jsf.png" alt="jsfiddle 바로가기" title="jsfiddle 바로가기">
                 </a>
             </li>
         </ul>
     </footer>
+    <a href="" class="scroll_up"><i class="fas fa-angle-up"></i></a>
 </body>
 
 </html>
