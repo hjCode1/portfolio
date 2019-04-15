@@ -1,11 +1,13 @@
 @charset "UTF-8";
-* {font-family: 'Noto Sans KR', sans-serif}
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
 *::selection {
-    background:#5918df; 
+    background:#c19aff; 
     color:#fff;
 }
 /* header */
-header {
+#header {
     position:fixed; 
     top:0; 
     z-index:100;
@@ -13,7 +15,7 @@ header {
     height:60px; 
     transition:all .3s ease;
 }
-header.on {
+#header.on {
     top:-130px;
 }
 #logo {
@@ -27,7 +29,7 @@ header.on {
     fill:#d1bbff;
     stroke-dasharray: 400;
     opacity: 1;
-    animation: logo 2s cubic-bezier(0.07, 0.63, 1, 0.14);
+    animation: logo 2.5s cubic-bezier(0.07, 0.63, 1, 0.14);
  }
  @keyframes logo {
     0% {
@@ -58,7 +60,7 @@ header.on {
 #menu_ico span {
     display: block; 
     margin-bottom: 4px; 
-    background:#5918df; 
+    background:#c19aff; 
     width:30px; 
     height:2px; 
     transition:all .5s ease-in-out;
@@ -227,7 +229,6 @@ section {
     animation:vtxt 1s .3s forwards ease-in-out; 
 }
 
-
 @keyframes vtxt {
     0% {
         opacity: 0;
@@ -239,10 +240,22 @@ section {
     }
 }
 
+.arr_down {
+    position: absolute;
+    left: 50%;
+    bottom:170px;
+    z-index:15;
+    font-size:30px;
+    color:#c19aff;
+    opacity:.4;
+    transform: translateX(-50%);
+}
+
 
 /* section2 */
 #sec2 {
-    padding:150px 0; 
+    padding:150px 0;
+    background: url(../img/bg_section-top.jpg) no-repeat 100% 0 #222;
 }
 .container {
     margin:0 auto;
@@ -328,19 +341,22 @@ section {
 /* section3 */
 #sec3 {
     padding:0 0 150px;
-    margin:0 0 150px;
 }
 .work_wrap {
     position: relative;
 }
 .layer {
     position: relative;
-    margin:0 0 70px;
-    width:700px;
+    margin-bottom:70px;
+    width:100%;
+    max-width:700px;
     perspective: 1000px;
 }
+.layer:nth-of-type(even) {
+    margin-left:auto;
+}
 .layer:last-of-type {
-    margin:0;
+    margin-bottom:0;
 }
 .layer a {
     display:block;
@@ -361,7 +377,6 @@ section {
     width:250px;
     height:150px;
     transform-style: preserve-3d;
-    transform: translateZ(100px);
     line-height: 1;
     transition: all .1s ease;
 }
@@ -379,8 +394,55 @@ section {
     font-size:16px;
     color:#ddd;
 }
+.layer:hover .work_title {
+    transform: translateZ(100px);
+}
 
-
+/* section4 */
+#sec4 {
+    padding:0 0 150px;
+    margin:0 0 150px;
+    background: url(../img/bg_section-btm.jpg) no-repeat 0 100% #222;
+}
+.lab_area {
+    display:flex;
+    padding:0 40px;
+}
+.lab {
+    flex:1;
+}
+.lab dt {
+    margin:0 0 20px;
+    font-size:40px;
+    color:#53425b;
+    font-weight:bold;
+    line-height:1;
+}
+.lab dd {
+    line-height: 30px;
+}
+.lab dd a {
+    display:inline-block;
+    position:relative;
+    font-size:17px;
+    color:#fff;
+    font-weight:lighter;
+    letter-spacing: 3px;
+    overflow: hidden;
+}
+.lab dd a:after {
+    content:"";
+    position: absolute;
+    bottom:0;
+    left:0;
+    background:#fff;
+    width:400%;
+    height:1px;
+}
+.lab dd a:hover:after {
+    background:linear-gradient(245deg, #5918df, #1593e3, #ff3d77, #ffa63d) 50% / 500%;
+    animation:gra 5s ease infinite;
+}
 
 /* footer */
 footer {
@@ -419,5 +481,171 @@ footer ul li img {
     width:100%;
 }
 
+/* scroll up */
+.scroll_up {
+    display:flex;
+    position: fixed;
+    right:50px;
+    bottom:70px;
+    z-index:120;
+    background:#313131;
+    border-radius: 5px;
+    width:40px;
+    height:40px;
+    justify-content: center;
+    align-items: center;
+}
+.scroll_up i {
+    font-size:20px;
+    color:#fff;
+}
 
 
+/* small pc */
+@media screen and (max-width:1199px) and (min-width:991px){
+    .layer {
+        margin:0 auto 70px !important; 
+    }
+    .video_tit {
+        top:190px;
+        font-size:70px;
+    }
+    .arr_down  {
+        bottom:100px;
+    }
+}
+/* tablet */
+@media screen and (max-width: 991px) and (min-width: 768px){
+    #logo {
+        left:40px;
+        top:20px;
+    }
+    #logo svg {
+        width:100px;
+    }
+    #menu_ico {
+        display:none;
+    }
+    .layer {
+        margin:0 auto 70px !important; 
+    }
+    .video_tit {
+        top:50%;
+        right:auto;
+        left:50%;
+        font-size:50px;
+        text-align:center;
+        animation: none;
+        opacity: 1;
+        transform:translate(-50%, -50%);
+    }
+    .arr_down {
+        bottom:10px;
+    }
+    #sec2 {
+        padding:100px 30px 0;
+    }
+    .title {
+        font-size:60px;
+    }
+    #sec3 {
+        padding:0 30px 100px;
+    }
+    .work_title {
+        right:50px;
+    }
+    #sec4 {
+        padding:0 30px 100px;
+    }
+}
+/* mobile */
+@media screen and (max-width: 767px){
+    #logo {
+        left:15px;
+        top:0;
+    }
+    #logo svg {
+        width:70px;
+        height:60px;
+    }
+    #menu_ico {
+        display:none;
+    }
+    .layer {
+        margin:0 auto 50px !important; 
+    }
+    .video_tit {
+        top:50%;
+        right:auto;
+        left:50%;
+        font-size:22px;
+        text-align:center;
+        animation: none;
+        opacity: 1;
+        transform:translate(-50%, -50%);
+    }
+    .arr_down {
+        font-size:20px;
+        bottom:10px;
+    }
+    #sec2 {
+        padding:60px 20px 0;
+        background-size: 70%;
+    }
+    .title {
+        padding:20px 0;
+        font-size:35px;
+    }
+    .dots {
+        display:none !important;
+    }
+    #sec3 {
+        padding:0 20px 60px;
+        background-size: 70%;
+    }
+    .work_wrap .img {
+        height:auto;
+    }
+    .work_wrap .img img {
+        width:100%;
+    }
+    .work_title {
+        position: static;
+        padding:30px 20px;
+        width:100%;
+        height:auto;
+        transform: translateZ(0);
+    }
+    .work_title h3 {
+        font-size:22px;
+    }
+    .work_title span {
+        margin: 10px 0;
+        height:1px;
+    }
+    .work_title p {
+        font-size:13px;
+    }
+    #sec4 {
+        padding:0 20px 60px;
+    }
+    .lab_area {
+        flex-direction: column;
+    }
+    .lab:nth-of-type(1) {
+        margin:0 0 35px;
+    }
+    .lab dt {
+        margin:0 0 15px;
+        font-size:25px;
+    }
+    .lab dd {
+        line-height:23px;
+    }
+    .lab dd a {
+        font-size:14px;
+    }
+    footer p {
+        font-size:13px;
+    }
+}
