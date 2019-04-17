@@ -28,6 +28,10 @@ $(document).ready(function () {
                 $('header').removeClass('on');
             }
             lastScroll = st;
+
+            if( $('#menu_ico').hasClass('open') ){
+                $('header').removeClass('on');
+            }
         });
     };
     headerShow();
@@ -94,4 +98,4 @@ $(document).ready(function () {
 
 
 
-}); // end
+});
