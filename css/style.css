@@ -626,6 +626,9 @@ footer ul li img {
     .work_title p {
         font-size:13px;
     }
+    .layer:hover .work_title {
+        transform: none;
+    }
     #sec4 {
         padding:0 20px 60px;
     }
